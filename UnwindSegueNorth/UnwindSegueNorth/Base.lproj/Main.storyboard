@@ -28,6 +28,9 @@
                                 <state key="normal" title="North">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonIsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WzH-NM-kHf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEM-cp-ah2">
                                 <rect key="frame" x="150" y="609" width="75" height="34"/>
@@ -39,9 +42,12 @@
                                 <state key="normal" title="South">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonIsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oyV-0l-hHP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsR-fO-j7N">
-                                <rect key="frame" x="20" y="316" width="75" height="34"/>
+                                <rect key="frame" x="20" y="316.5" width="75" height="34"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="etP-u9-4Ld"/>
@@ -50,9 +56,12 @@
                                 <state key="normal" title="West">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonIsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SSN-t5-pPH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkV-eW-74R">
-                                <rect key="frame" x="284" y="316" width="75" height="34"/>
+                                <rect key="frame" x="284" y="316.5" width="75" height="34"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="Hd9-6u-WS4"/>
@@ -61,6 +70,9 @@
                                 <state key="normal" title="East">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonIsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="66j-0j-CeT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.19600022007042253" colorSpace="custom" customColorSpace="sRGB"/>
@@ -76,10 +88,61 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="FrL-OW-beE" kind="presentation" identifier="directionSegue" id="rhI-hA-Gr4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="133.69565217391306"/>
+        </scene>
+        <!--Direction View Controller-->
+        <scene sceneID="fFr-pY-yMF">
+            <objects>
+                <viewController id="FrL-OW-beE" customClass="DirectionViewController" customModule="UnwindSegueNorth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7O1-jX-Iuv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xyd-Yq-e08">
+                                <rect key="frame" x="122.5" y="309.5" width="130" height="48"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="atW-dG-kxp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfA-wp-HVT">
+                                <rect key="frame" x="16" y="28" width="69" height="34"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="Y0v-tj-0cq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <segue destination="PyR-AX-Hv2" kind="unwind" unwindAction="unWindActionWithUnwindSegue:" id="6Gk-uq-fWe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xyd-Yq-e08" firstAttribute="centerY" secondItem="7O1-jX-Iuv" secondAttribute="centerY" id="Cjx-1u-oDf"/>
+                            <constraint firstItem="Xyd-Yq-e08" firstAttribute="centerX" secondItem="7O1-jX-Iuv" secondAttribute="centerX" id="WKA-c8-oDO"/>
+                            <constraint firstItem="TfA-wp-HVT" firstAttribute="top" secondItem="bxS-lf-4Su" secondAttribute="top" constant="8" id="XId-kZ-mca"/>
+                            <constraint firstItem="TfA-wp-HVT" firstAttribute="leading" secondItem="bxS-lf-4Su" secondAttribute="leading" constant="16" id="sRZ-51-v5M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bxS-lf-4Su"/>
+                    </view>
+                    <connections>
+                        <outlet property="directionLabel" destination="Xyd-Yq-e08" id="YyA-Cc-egS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zu6-PQ-isu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="PyR-AX-Hv2" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1172" y="134"/>
         </scene>
     </scenes>
 </document>

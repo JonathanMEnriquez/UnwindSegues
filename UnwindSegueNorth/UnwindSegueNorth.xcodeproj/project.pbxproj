@@ -14,6 +14,7 @@
 		CE5E84A32010042D006BA027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5E84A12010042D006BA027 /* LaunchScreen.storyboard */; };
 		CE5E84AE2010042D006BA027 /* UnwindSegueNorthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E84AD2010042D006BA027 /* UnwindSegueNorthTests.swift */; };
 		CE5E84B92010042D006BA027 /* UnwindSegueNorthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E84B82010042D006BA027 /* UnwindSegueNorthUITests.swift */; };
+		CE5E84C920100925006BA027 /* DirectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E84C820100925006BA027 /* DirectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CE5E84B42010042D006BA027 /* UnwindSegueNorthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnwindSegueNorthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5E84B82010042D006BA027 /* UnwindSegueNorthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnwindSegueNorthUITests.swift; sourceTree = "<group>"; };
 		CE5E84BA2010042D006BA027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5E84C820100925006BA027 /* DirectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +99,12 @@
 		CE5E84972010042D006BA027 /* UnwindSegueNorth */ = {
 			isa = PBXGroup;
 			children = (
-				CE5E84982010042D006BA027 /* AppDelegate.swift */,
-				CE5E849A2010042D006BA027 /* ViewController.swift */,
 				CE5E849C2010042D006BA027 /* Main.storyboard */,
+				CE5E849A2010042D006BA027 /* ViewController.swift */,
+				CE5E84C820100925006BA027 /* DirectionViewController.swift */,
 				CE5E849F2010042D006BA027 /* Assets.xcassets */,
 				CE5E84A12010042D006BA027 /* LaunchScreen.storyboard */,
+				CE5E84982010042D006BA027 /* AppDelegate.swift */,
 				CE5E84A42010042D006BA027 /* Info.plist */,
 			);
 			path = UnwindSegueNorth;
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5E849B2010042D006BA027 /* ViewController.swift in Sources */,
+				CE5E84C920100925006BA027 /* DirectionViewController.swift in Sources */,
 				CE5E84992010042D006BA027 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
